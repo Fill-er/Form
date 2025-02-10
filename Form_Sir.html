@@ -1,0 +1,204 @@
+<html>
+
+<head><link rel="icon" href="dhoni.jpg" type="image/x-icon"></head>
+
+<body bgcolor="skyblue">
+
+<form method="post" action="response1.html"> 
+		
+<fieldset style="border:midnightblue outset 20px; background-image:url(dhoni.jpg); background-repeat: no-repeat; background-position: center;background-size: 1300px 400px;color:white;font-weight:bold;font-size:25px;">
+
+<legend style="background-color:red;color:white;font-weight:bold;font-size:20px;text-align:center;">PERSONAL DETAILS</legend>
+
+<b>User Name:</b>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type ="text"  size="20" maxlength="30" autocomplete="on"   placeholder="Mandatory" required  tabindex="1" style="text-transform:uppercase;" name="username" value=" "/>
+<font color="red">*</font><br><br>
+
+<b>Password</b>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="password" name="Uid" size="8" minlength="6" maxlength="8"  placeholder="MIN 6 CHARS" tabindex="2"/>
+
+<br/><br/>
+
+<h3>Date of Birth : </h3><input type="date" tabindex="3" name="DOB"> <br>
+
+<h2>Date of Birth:</h2>
+	<select>	
+			<option >Date</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+			<option>14</option>
+			<option>15</option>
+			<option>16</option>
+			<option>17</option>
+			<option>18</option>
+			<option>19</option>
+			<option>20</option>
+			<option>21</option>
+			<option>22</option>
+			<option>23</option>
+			<option>24</option>
+			<option>25</option>
+			<option>26</option>
+			<option>27</option>
+			<option>28</option>
+			<option>29</option>
+			<option>30</option>
+			<option>31</option>
+		</select>
+		<select>
+			<option>Month</option>
+			<option>January</option>
+			<option>February</option>
+			<option >March</option>
+			<option>April</option>
+			<option>May</option>
+			<option>June</option>
+			<option>July</option>
+			<option>August</option>
+			<option>September</option>
+			<option>October</option>
+			<option>November</option>
+			<option>December</option>
+		</select>
+		<select>
+			<option>Year</option>
+			<option>1990</option>
+			<option>1991</option>
+			<option>1992</option>
+			<option>1993</option>
+			<option>1994</option>
+			<option>1995</option>
+			<option>1996</option>
+			<option>1997</option>
+			<option>1998</option>
+			<option>1999</option>
+			<option>2000</option>
+			<option>After 2000</option>
+		</select>
+</fieldset>
+
+<hr color="red">
+
+<H2>Radio Buttons:</H2>
+<h3>GENDER:</h3>
+		<input type="radio" name="gender" value="M" >Male	
+        <input type="radio" name="gender" value="F" checked>Female 
+
+<hr color="red" >
+<H2>Check Boxes</H2>
+<h3>Select Your Hobbies: </h3>  <!-- Check Name attribute ?? once : ooo name helps to check only one one choice here it selects multiple options--->	
+<input type="checkbox" name="hobby" value="Reading">Reading	
+<input type="checkbox" name="hobby" value="Painting">Painting		
+<input type="checkbox" name="hobby" value="Sports" >Outdoor Sports		
+<input type="checkbox" name="hobby" value="Music" checked>Music<br/><br/>
+
+
+<H2>Drop down List</H2>
+<b>Select your Educational Qualification:</b><br/><br/>
+<select name="Qualification" size="3" multiple>						
+<option value="PG">Masters</option>			
+<option value="UG" selected="selected">Graduate</option>		
+<option value="Undergraduate" >UG</options>		
+<option Value="Matric">Class X</option>
+</select>
+<br/>
+<hr color="red" size="10">
+
+<h2>The datalist Element</h2>
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+<input list="browsers" name="browsers"> <!-- The list attribute of the <input> element, must refer to the id attribute of the <datalist> element. -->
+<datalist id = "browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>
+<hr color="red">
+
+<h2> SELECT YOUR FAV COLOR: </h2>
+
+<b>Select your favorite color:</b>
+<input type="color"  name="favcolor" value="#000000">
+<br/><br/>
+<hr color="red">
+
+<h2>File upload</h2>
+<p>Show a file-select field which allows a file to be chosen for upload:</p>
+<b>Select a file:</b>
+<input type="file" name="myfile"><br><br>
+<hr color="red">
+
+
+<h2>Month Field</h2>
+<p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
+<b>Birthday (month and year):</b>
+<input type="month" id="bdaymonth" name="bdaymonth"> <br/>
+<hr color="red">
+
+
+<h2>Number Field</h2>
+<p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+<p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+<b >Your Rating:( Between 1-100 )</b>
+<input type="number"  name="quantity" min="1" max="100"> <br/>
+<hr color="red">
+
+<h2>Numeric Steps</h2>
+
+<p>Depending on browser support: Fixed steps will apply in the input field.</p>
+<b>Quantity:</b>
+<input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="20"> <br/>
+
+<h2>Range Field</h2>
+<p>Depending on browser support: The input type "range" can be displayed as a slider control.<p>
+<hr color="red">
+<b>Volume (between 0 and 50):</b>
+<input type="range" id="vol" name="vol" min="0" max="50" value="10">
+<hr color="red">
+
+<h2>Telephone Field</h2>
+<p>The <strong>input type="tel"</strong> is used for input fields that should contain a telephone number:</p>
+<b>Enter a phone number:</b><br><br>
+<input type="tel" name="phone" placeholder="+91-xxxxxxxxxx" pattern="[+91]{3}-[0-9]{10}" ><br><br>
+<small>Format: xxxxxxxxxx</small><br><br>
+<hr color="red">
+
+<h2>Show a Time Input Control</h2>
+<p>The <strong>input type="time"</strong> allows the user to select a time (no time zone):</p>
+<p>If the browser supports it, a time picker pops up when entering the input field.</p>
+<b>Select a time:</b>
+<input type="time" id="appt" name="appt">
+<hr color="red">
+
+<h2>Display a Week Input Control</h2>
+<p>The <strong>input type="week"</strong> allows the user to select a week and year.</p>
+<p>If the browser supports it, a date picker pops up when entering the input field.</p>
+<b>Select a week:</b>
+<input type="week" id="week" name="week">
+<hr color="red">
+
+<h4>Comment : </h4><textarea rows="8" cols="70" max="300" name="feedback"> Please give your feedback.</textarea> <br><br><br>
+
+<pre>				
+		
+	<button type="Submit" value="send" accesskey="s" style="border-radius:20px;background-color:red;color:white;font-weight:bold;" ><u>S</u>UBMIT	</button>
+	<button type="reset" value="reset" accesskey="r" style="border-radius:20px;background-color:midnightblue;color:white;font-weight:bold;"><u>R</u>ESET	</button>
+</pre>
+
+<hr color="red">
+</form>
+</body>
+</html>
